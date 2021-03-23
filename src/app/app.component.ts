@@ -11,7 +11,10 @@ export class AppComponent {
   arrComida: Producto[];
   arrBebida: Producto[];
 
+  productosSeleccionados: Producto[];
   constructor(){
+    this.productosSeleccionados = [];
+
     this.arrComida = [
       new Producto('pizza','https://www.petitchef.es/imgupl/recipe/pizza-carbonara-con-bacon-y-cebolla--md-452894p701394.jpg', 11.50),
       new Producto('hamburguesa','https://www.petitchef.es/imgupl/recipe/hamburguesa-con-queso-raclette--md-457334p712602.jpg', 8.50),
@@ -26,5 +29,9 @@ export class AppComponent {
       new Producto('nestea','https://www.compraonline.bonpreuesclat.cat/images-v3/dcbcfd72-cf23-44a2-8e14-8a38edd645a3/4d82766a-50d3-4d8e-bd16-e257270cbd49/500x500.jpg', 2.50),
       new Producto('coca-cola','https://www.compraonline.bonpreuesclat.cat/images-v3/dcbcfd72-cf23-44a2-8e14-8a38edd645a3/c79c0842-b258-49a5-b540-76097c9b4c28/500x500.jpg', 2.50),
     ]
+  }
+  onProductoSeleccionado($event){
+    this.productosSeleccionados.push($event);
+    //console.log($event)
   }
 }
