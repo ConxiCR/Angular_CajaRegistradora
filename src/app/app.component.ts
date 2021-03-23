@@ -31,7 +31,16 @@ export class AppComponent {
     ]
   }
   onProductoSeleccionado($event){
-    this.productosSeleccionados.push($event);
     //console.log($event)
+    //this.productosSeleccionados.push($event);
+    
+    const productoEncontrado = this.productosSeleccionados.find(producto => producto.nombre === $event.nombre);
+    if(productoEncontrado){
+      productoEncontrado.cantidad++;
+    }else{
+      $event.cantidad = 1;
+      this.productosSeleccionados.push($event);
+    }
+    console.log(this.productosSeleccionados);
   }
 }
