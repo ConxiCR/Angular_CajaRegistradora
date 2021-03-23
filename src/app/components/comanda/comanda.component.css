@@ -1,0 +1,15 @@
+h3{
+    text-transform: uppercase;
+    background-color: lightblue;
+    padding: 10px;
+}
+.calculaTotal{
+    background-color: lightslategray;
+    color: white;
+    text-align: center;
+}
+.productos{
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}

@@ -7,6 +7,6 @@
     <app-lista-productos titulo="Bebida" [productos] = "arrBebida" (productoSeleccionado) = "onProductoSeleccionado($event)"></app-lista-productos>
   </div>
   <div class="derecha">
-    <app-comanda></app-comanda>
+    <app-comanda [arrProductos] = "productosSeleccionados"></app-comanda>
   </div>
 </div>

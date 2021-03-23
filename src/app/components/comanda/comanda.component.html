@@ -1,1 +1,7 @@
-<p>comanda works!</p>
+<h3>Comanda</h3>
+<p class="calculaTotal">TOTAL:  {{ calculaTotal() }}€</p>
+<div class="productos">
+    <div class="producto" *ngFor = "let producto of arrProductos; let indice = index;" (click)="onClickBorrar(indice)">
+        <p>{{ producto.nombre }} : {{ producto.precio }}€</p>
+    </div>
+</div>
