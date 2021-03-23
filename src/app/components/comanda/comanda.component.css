@@ -1,15 +1,19 @@
 h3{
     text-transform: uppercase;
-    background-color: lightblue;
+    background-color: rgba(175, 57, 14, 0.712);
+    color: cornsilk;
+    font-style: bold;
     padding: 10px;
 }
 .calculaTotal{
     background-color: lightslategray;
     color: white;
     text-align: center;
+    padding: 5px;
 }
 .productos{
     display: flex;
     flex-direction: column;
     cursor: pointer;
+    color: cornsilk;
 }
