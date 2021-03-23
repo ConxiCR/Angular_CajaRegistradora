@@ -1,0 +1,23 @@
+h3{
+    text-transform: uppercase;
+    background-color: lightblue;
+    padding: 10px;
+}
+.productos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.producto{
+    width: 22%;
+    margin: 5px;
+    border: 1px solid gray;
+    cursor: pointer;
+}
+.producto img{
+    width: 100%;
+}
+.producto p{
+    margin: 5px auto;
+    text-align: center;
+}
