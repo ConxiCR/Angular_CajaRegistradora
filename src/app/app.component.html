@@ -3,8 +3,8 @@
 <div class="container">
   <div class="izquierda">
     <!--two products-->
-    <app-lista-productos titulo="Comida"></app-lista-productos>
-    <app-lista-productos titulo="Bebida"></app-lista-productos>
+    <app-lista-productos titulo="Comida" [productos] = "arrComida"></app-lista-productos>
+    <app-lista-productos titulo="Bebida" [productos] = "arrBebida"></app-lista-productos>
   </div>
   <div class="derecha">
     <app-comanda></app-comanda>
